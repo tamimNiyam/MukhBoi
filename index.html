@@ -1,32 +1,186 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>MukhBoi</title>
-	</head>
+<head>
 
-	<body>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Afacad:wght@700&family=Bebas+Neue&family=Cabin&family=Ubuntu&display=swap" rel="stylesheet">
+
+	<title>MukhBoi</title>
+
+<style>
+
+	.NoSelect {
+		user-select: none;
+	}
+
+	.Ubuntu {
+		font-family: Ubuntu;
+	}
+
+	.MiddleMargin {
+		margin: auto;
+	}
+
+	#MukhBoi {
+		font-family: Bebas Neue;
+		letter-spacing: 4px;
+		color: #0866FF;
+		margin: auto;
+		text-align: center;
+		font-size: 5em;
+	}
+
+	#MukhBoiWelcome {
+		font-family: Cabin;
+		text-align: center;
+		font-size: 1.4em;
+		margin-bottom: 50px;
+	}
+
+	#TableOfEverything {
+		margin: auto;
+		background-color: whitesmoke;
+		padding: 25px;
+		border-radius: 15px;
+		box-shadow: 0px 0px 15px gray;
+	}
+
+	.InputBox {
+		width: 300px;
+		padding: 15px 20px;
+		margin-bottom: 10px;
+		border: 1px solid blue;
+		border-radius: 5px;
+		font-size: 1em;
+	}
+
+	#Remember {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#logIn {
+		margin-top: 20px;
+		background-color: #1877F2;
+		border: 0px solid black;
+		border-radius: 5px;
+		padding: 9px;
+		width: 340px;
+		cursor: pointer;
+		font-size: 1.5em;
+		font-family: Afacad;
+		color: ghostwhite;
+	}
+
+	#PassForget {
+		cursor: pointer;
+		font-size: 0.9em;
+		font-family: Ubuntu;
+		text-decoration: none;	
+	}
+
+	#PassForget: hover {
+		color:pink;
+		text-decoration: underline;
+	}
+
+	#passF {
+		margin-top: 15px;
+		margin-bottom: 40px;
+		padding-bottom: 25px;
+		width: 340px;
+		border-bottom: 1px solid gray;
+		text-align: center;
+	}
+
+	.border-bottom {
+		border-bottom: 1px solid gray;
+	}
+
+	#NewAccount {
+		background-color: #42B72A;
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 10px;
+		width: auto;
+		cursor: pointer;
+		font-size: 1.3em;
+		font-family: Afacad;
+		color: ghostwhite;
+		text-decoration: none;
+	}
+
+</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+	<h1 id="MukhBoi" class="NoSelect">MUKH~BOI</h1>
+
+	<p id="MukhBoiWelcome">Welcome to 'Mukh Boi'<br>Enjoy the Mukh Boi experience!</p>
+
+	<table id = "TableOfEverything">
+		
+		<tr>
+			<td>
+
 		<form>
+		
 			<table>
-				<tr>
-					<td>User Name: </td>
-					<td><label><input type = "text" name = "fName" required></label></td>
+				
+				<tr><td><label><input class="InputBox" type="text" name="username" placeholder="Username" required></label></td>
 				</tr>
-				<tr>
-					<td>Password: </td>
-					<td>
-						<label><input type = "password" name = "password" required></label>
-					</td>
+
+				<tr><td><label><input class="InputBox" type="Password" name="password" placeholder="Password" required></label></td>
 				</tr>
+
 			</table>
-			
-			<br>
-				<label><input type = "checkbox" name = "remembering">&nbsp;Remember Me</label>
-			
-			<br><br>
-			<td><input type = "submit" value = "Login"></td>
-			<td><input type = "button" value = "Forget Password"></td>
+
+			<label class="NoSelect Ubuntu"><input id="Remember" type="checkbox" name="remembering"> Remember Me</label>
+
+				<table class="MiddleMargin">
+					<tr>
+						<td>
+							<input id="logIn" type="submit" value="Log in">
+						</td>
+					</tr>
+				</table>
+
 		</form>
-	</body>
+
+				<table class="MiddleMargin NoSelect" id="passF">
+					<tr>
+						<td>
+							<a id="PassForget" href="google.com">Forgotten Password?</a>
+						</td>
+					</tr>
+				</table>
+
+				<table class="MiddleMargin NoSelect">
+					<tr>
+						<td>
+							<a id="NewAccount" href="file:///D:/html/basic/registration.html">Create new account</a>
+						</td>
+					</tr>
+				</table>
+
+			</td>
+		</tr>
+
+	</table>
+
+</body>
 
 </html>
